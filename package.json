@@ -1,0 +1,15 @@
+{
+  "name": "auto_tt",
+  "version": "1.0.0",
+  "description": "Automated tool to manage annoying BairesDev TimeTracker",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eliaquín Encarnación",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  }
+}
