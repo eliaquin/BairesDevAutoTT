@@ -28,13 +28,13 @@ async function work() {
                 await driver.findElement(By.id('ctl00_ContentPlaceHolder_idProyectoDropDownList')).sendKeys(projectFirstLetters, Key.RETURN);
                 setTimeout(async () => {
                     await driver.findElement(By.id('ctl00_ContentPlaceHolder_idTipoAsignacionDropDownList')).sendKeys(asignamentFirstLetters, Key.RETURN);
-                }, 500);
-                setTimeout(async () => {
-                    await driver.findElement(By.id('ctl00_ContentPlaceHolder_DescripcionTextBox')).sendKeys(`${work.description} ${x + 1}`, Key.RETURN);
                 }, 1000);
                 setTimeout(async () => {
+                    await driver.findElement(By.id('ctl00_ContentPlaceHolder_DescripcionTextBox')).sendKeys(`${work.description} ${x + 1}`, Key.RETURN);
+                }, 2000);
+                setTimeout(async () => {
                     await driver.findElement(By.id('ctl00_ContentPlaceHolder_idFocalPointClientDropDownList')).sendKeys(focalPointFirstLetters, Key.RETURN);
-                }, 1500);
+                }, 3000);
                 buttonOut = await driver.findElement(By.className('btn-blue'));
                 buttonOut.click();
                 await driver.wait(until.urlContains('Lista'));
